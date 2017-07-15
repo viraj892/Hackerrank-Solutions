@@ -28,7 +28,7 @@ public class JesseAndProfit {
 			boolean profit_achievable = false;
 			for (int j = 0; j < n; j++) {
 				for (int k = j + 1; k < n; k++) {
-					if ((price[k] - price[j]) >= profit[i]) {
+					if ((price[k] - price[j]) == profit[i]) {
 						if (k - j < min_days) {
 							min_days = k - j;
 							buy_pos = j;
@@ -39,7 +39,7 @@ public class JesseAndProfit {
 				}
 			}
 			if(profit_achievable){
-				System.out.print(buy_pos+1);
+				System.out.print(buy_pos+1+" ");
 				System.out.println(sell_pos+1);
 			}
 			else
