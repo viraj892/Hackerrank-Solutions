@@ -6,8 +6,7 @@ import java.math.*;
 import java.util.regex.*;
 
 /*
- * Primality
- */
+ * Primality */
 public class UserSolution {
         
     public static boolean isPrime(int n){
